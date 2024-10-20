@@ -42,8 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['importFile'])) {
 
         // Execute the query using mysqli
         if (mysqli_query($con, $sql)) {
-            // Success: You can handle success messages or logs here
-            // echo "Contact imported successfully!<br>";
+            // echo "Contact added successfully!<br>";
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
