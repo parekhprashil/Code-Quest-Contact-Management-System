@@ -1,6 +1,9 @@
 <?php
-// edit_contact.php
 session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("location: index.php");
+    exit;
+}
 include 'conf.php'; // Include your DB connection config
 
 // Check if 'id' is set, which indicates this is an edit request

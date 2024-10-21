@@ -1,5 +1,9 @@
 <?php
 session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("location: index.php");
+    exit;
+}
 include 'conf.php';
 
 // Check if an ID is passed (e.g., via GET) to load the contact data for editing

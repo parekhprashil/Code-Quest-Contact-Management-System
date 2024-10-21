@@ -60,7 +60,7 @@
     <header class="bg-blue-600 text-white p-4">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold">Code Quest: Contact Management System</h1>
-            <button class="bg-white text-blue-600 px-4 py-2 rounded shadow">Login</button>
+            <a href="con_logout.php" class="bg-white text-blue-600 px-4 py-2 rounded shadow">Logout</a>
         </div>
     </header>
 
